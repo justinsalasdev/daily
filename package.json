@@ -1,9 +1,14 @@
 {
+  "name": "daily",
   "packageManager": "yarn@3.1.1",
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
   "devDependencies": {
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
-    "parcel": "^2.2.1"
+    "parcel": "^2.2.1",
+    "typescript": "^4.5.5"
   },
   "dependencies": {
     "react": "^17.0.2",

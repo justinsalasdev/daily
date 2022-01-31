@@ -2118,6 +2118,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"daily@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "daily@workspace:."
+  dependencies:
+    "@types/react": ^17.0.38
+    "@types/react-dom": ^17.0.11
+    parcel: ^2.2.1
+    react: ^17.0.2
+    react-dom: ^17.0.2
+    typescript: ^4.5.5
+  languageName: unknown
+  linkType: soft
+
 "debug@npm:2.6.9":
   version: 2.6.9
   resolution: "debug@npm:2.6.9"
@@ -4736,18 +4749,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"root-workspace-0b6124@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "root-workspace-0b6124@workspace:."
-  dependencies:
-    "@types/react": ^17.0.38
-    "@types/react-dom": ^17.0.11
-    parcel: ^2.2.1
-    react: ^17.0.2
-    react-dom: ^17.0.2
-  languageName: unknown
-  linkType: soft
-
 "run-parallel@npm:^1.1.9":
   version: 1.2.0
   resolution: "run-parallel@npm:1.2.0"
@@ -5245,6 +5246,26 @@ __metadata:
   version: 0.21.3
   resolution: "type-fest@npm:0.21.3"
   checksum: e6b32a3b3877f04339bae01c193b273c62ba7bfc9e325b8703c4ee1b32dc8fe4ef5dfa54bf78265e069f7667d058e360ae0f37be5af9f153b22382cd55a9afe0
+  languageName: node
+  linkType: hard
+
+"typescript@npm:^4.5.5":
+  version: 4.5.5
+  resolution: "typescript@npm:4.5.5"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 506f4c919dc8aeaafa92068c997f1d213b9df4d9756d0fae1a1e7ab66b585ab3498050e236113a1c9e57ee08c21ec6814ca7a7f61378c058d79af50a4b1f5a5e
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@^4.5.5#~builtin<compat/typescript>":
+  version: 4.5.5
+  resolution: "typescript@patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=493e53"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: c05c318d79c690f101d7ffb34cd6c7d6bbd884d3af9cefe7749ad0cd6be43c7082f098280982ca945dcba23fde34a08fed9602bb26540936baf8c0520727d3ba
   languageName: node
   linkType: hard
 

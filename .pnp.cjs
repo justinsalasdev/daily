@@ -19,14 +19,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     ],
     "dependencyTreeRoots": [
       {
-        "name": "root-workspace-0b6124",
+        "name": "daily",
         "reference": "workspace:."
       }
     ],
     "enableTopLevelFallback": true,
     "ignorePatternData": "(^(?:\\.yarn\\/sdks(?:\\/(?!\\.{1,2}(?:\\/|$))(?:(?:(?!(?:^|\\/)\\.{1,2}(?:\\/|$)).)*?)|$))$)",
     "fallbackExclusionList": [
-      ["root-workspace-0b6124", ["workspace:."]]
+      ["daily", ["workspace:."]]
     ],
     "fallbackPool": [
     ],
@@ -39,7 +39,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-dom", "npm:17.0.11"],
             ["parcel", "npm:2.2.1"],
             ["react", "npm:17.0.2"],
-            ["react-dom", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:17.0.2"]
+            ["react-dom", "virtual:4f19b827568d8ddf6c465d961679207c1269532387cee92879ab54cfa82c63d1464000f9ad7631d057073c6460c35b2a1a711b63a197c351431c7d68929710d7#npm:17.0.2"],
+            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=493e53"]
           ],
           "linkType": "SOFT",
         }]
@@ -2561,6 +2562,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["csstype", "npm:3.0.10"]
           ],
           "linkType": "HARD",
+        }]
+      ]],
+      ["daily", [
+        ["workspace:.", {
+          "packageLocation": "./",
+          "packageDependencies": [
+            ["daily", "workspace:."],
+            ["@types/react", "npm:17.0.38"],
+            ["@types/react-dom", "npm:17.0.11"],
+            ["parcel", "npm:2.2.1"],
+            ["react", "npm:17.0.2"],
+            ["react-dom", "virtual:4f19b827568d8ddf6c465d961679207c1269532387cee92879ab54cfa82c63d1464000f9ad7631d057073c6460c35b2a1a711b63a197c351431c7d68929710d7#npm:17.0.2"],
+            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=493e53"]
+          ],
+          "linkType": "SOFT",
         }]
       ]],
       ["debug", [
@@ -5848,10 +5864,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:17.0.2", {
-          "packageLocation": "./.yarn/__virtual__/react-dom-virtual-fe01f4b047/0/cache/react-dom-npm-17.0.2-f551215af1-1c1eaa3bca.zip/node_modules/react-dom/",
+        ["virtual:4f19b827568d8ddf6c465d961679207c1269532387cee92879ab54cfa82c63d1464000f9ad7631d057073c6460c35b2a1a711b63a197c351431c7d68929710d7#npm:17.0.2", {
+          "packageLocation": "./.yarn/__virtual__/react-dom-virtual-75bdf4c7ac/0/cache/react-dom-npm-17.0.2-f551215af1-1c1eaa3bca.zip/node_modules/react-dom/",
           "packageDependencies": [
-            ["react-dom", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:17.0.2"],
+            ["react-dom", "virtual:4f19b827568d8ddf6c465d961679207c1269532387cee92879ab54cfa82c63d1464000f9ad7631d057073c6460c35b2a1a711b63a197c351431c7d68929710d7#npm:17.0.2"],
             ["@types/react", "npm:17.0.38"],
             ["loose-envify", "npm:1.4.0"],
             ["object-assign", "npm:4.1.1"],
@@ -5975,20 +5991,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["inherits", "npm:2.0.4"]
           ],
           "linkType": "HARD",
-        }]
-      ]],
-      ["root-workspace-0b6124", [
-        ["workspace:.", {
-          "packageLocation": "./",
-          "packageDependencies": [
-            ["root-workspace-0b6124", "workspace:."],
-            ["@types/react", "npm:17.0.38"],
-            ["@types/react-dom", "npm:17.0.11"],
-            ["parcel", "npm:2.2.1"],
-            ["react", "npm:17.0.2"],
-            ["react-dom", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:17.0.2"]
-          ],
-          "linkType": "SOFT",
         }]
       ]],
       ["run-parallel", [
@@ -6555,6 +6557,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/type-fest-npm-0.21.3-5ff2a9c6fd-e6b32a3b38.zip/node_modules/type-fest/",
           "packageDependencies": [
             ["type-fest", "npm:0.21.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["typescript", [
+        ["patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=493e53", {
+          "packageLocation": "./.yarn/cache/typescript-patch-3020d8933d-c05c318d79.zip/node_modules/typescript/",
+          "packageDependencies": [
+            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=493e53"]
           ],
           "linkType": "HARD",
         }]
